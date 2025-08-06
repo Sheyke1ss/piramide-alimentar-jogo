@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0fff0;
+}
+
+#piramide {
+  position: relative;
+  width: 500px;
+  margin: 20px auto;
+}
+
+#imagem-piramide {
+  width: 100%;
+}
+
+.dropzone {
+  position: absolute;
+  width: 80%;
+  height: 33.3%;
+  left: 10%;
+  border: 2px dashed transparent;
+}
+
+.dropzone[data-nivel="base"] {
+  bottom: 0;
+}
+
+.dropzone[data-nivel="meio"] {
+  bottom: 33.3%;
+}
+
+.dropzone[data-nivel="topo"] {
+  bottom: 66.6%;
+}
+
+#alimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.alimento {
+  width: 80px;
+  margin: 10px;
+  cursor: grab;
+}

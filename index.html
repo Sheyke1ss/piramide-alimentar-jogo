@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Pirâmide Alimentar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Monte a Pirâmide Alimentar</h1>
+
+  <div id="piramide">
+    <img src="alimentosepiramide/piramide.png" alt="Pirâmide Alimentar" id="imagem-piramide">
+
+    <div class="dropzone" data-nivel="topo"></div>
+    <div class="dropzone" data-nivel="meio"></div>
+    <div class="dropzone" data-nivel="base"></div>
+  </div>
+
+  <h2>Arraste os alimentos abaixo para a pirâmide</h2>
+  <div id="alimentos">
+    <img src="alimentosepiramide/arroz.png" class="alimento" draggable="true" data-nivel="base">
+    <img src="alimentosepiramide/pao.png" class="alimento" draggable="true" data-nivel="base">
+    <img src="alimentosepiramide/macarrao.png" class="alimento" draggable="true" data-nivel="base">
+
+    <img src="alimentosepiramide/maca.png" class="alimento" draggable="true" data-nivel="meio">
+    <img src="alimentosepiramide/alface.png" class="alimento" draggable="true" data-nivel="meio">
+    <img src="alimentosepiramide/frango.png" class="alimento" draggable="true" data-nivel="meio">
+
+    <img src="alimentosepiramide/sorvete.png" class="alimento" draggable="true" data-nivel="topo">
+    <img src="alimentosepiramide/refrigerante.png" class="alimento" draggable="true" data-nivel="topo">
+    <img src="alimentosepiramide/chocolate.png" class="alimento" draggable="true" data-nivel="topo">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
